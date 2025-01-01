@@ -146,3 +146,64 @@ let fruits = ["apple", "banana", "orange"];
 for (let i = 0; i < fruits.length; i++){
     console.log(fruits[i]);
 }
+
+// while loop
+
+// ----- 1. Basic `while` Loop -----
+console.log("Basic while loop:");
+
+let i = 0;
+// The while loop checks the condition first before executing the code block
+while (i < 5) {
+    console.log(i); // Print the current value of 'i'
+    i++; // Increment 'i' to avoid an infinite loop
+}
+// Output: 0 1 2 3 4
+// The loop stops once 'i' reaches 5 because the condition 'i < 5' becomes false
+
+
+// ----- 2. `do...while` Loop -----
+console.log("\nBasic do...while loop:");
+
+i = 0; // Reset i
+// The do...while loop executes the code block at least once, regardless of the condition
+do {
+    console.log(i); 
+    i++; 
+} while (i < 5);
+// Output: 0 1 2 3 4
+// The loop executes the code block first, then checks the condition
+// It stops when 'i' reaches 5 because the condition 'i < 5' becomes false
+
+
+// ----- 3. Infinite `while` Loop (with `break`) -----
+console.log("\nInfinite while loop with break:");
+
+i = 0; // Reset i
+// Infinite loop, will run forever without stopping unless we manually break out of it
+while (true) {
+    console.log(i); // Print the current value of 'i'
+    i++; // Increment 'i'
+
+    // Exit the loop once 'i' is greater than 5
+    if (i > 5) {
+        break; // Break out of the infinite loop when 'i' is greater than 5
+    }
+}
+// Output: 0 1 2 3 4 5
+// The loop would run indefinitely if not for the 'break' condition.
+
+
+// ----- 4. `do...while` Loop with Initial Condition Not Met -----
+console.log("\ndo...while loop with initial false condition:");
+
+i = 10; // Set 'i' to a value greater than 5
+// The 'do...while' loop runs at least once, regardless of the condition
+do {
+    console.log(i); // Print the current value of 'i'
+    i++; // Increment 'i'
+} while (i < 5);
+// Output: 10
+// Even though the condition 'i < 5' is false initially, the loop runs once
+// and then exits because 'i' was incremented after the first execution.
+
