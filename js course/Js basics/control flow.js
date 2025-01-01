@@ -138,3 +138,11 @@ console.log(`${number1} ${operator} ${number2} = ${result}`);
 for (let i= 0; i < 5; i++){
     console.log("I love javascript");
 }
+
+// for loop with array
+
+let fruits = ["apple", "banana", "orange"];
+
+for (let i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
