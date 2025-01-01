@@ -287,3 +287,72 @@ switch (day) {
 // Wednesday
 // The break prevents fall-through to the next cases
 
+// CONTINUE STATEMENTS
+// The `continue` statement in a `while` loop or `do...while` loop skips the current iteration and moves to the next iteration.
+
+// ----- 1. Using `continue` in a `while` loop -----
+console.log("\nUsing continue in a while loop:");
+
+let i = 0;
+while (i < 10) {
+    if (i === 5) {
+        i++;
+        continue; 
+    }
+    console.log(initial);
+    i++;
+}
+// Output:
+// 0
+// 1
+// 2
+// 3
+// 4
+// 6
+// 7
+// 8
+// 9
+// The loop skips the iteration where i is 5
+
+// ----- 2. Using `continue` in a `for` loop -----
+console.log("\nUsing continue in a for loop:");
+
+for (let i = 0; i < 10; i++) {
+    if (i === 3) {
+        continue; 
+    }
+    console.log(i);
+}
+// Output:
+// 0
+// 1
+// 2
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// The loop skips the iteration where i is 3
+
+// ----- 3. Using `continue` in a `do...while` loop -----
+console.log("\nUsing continue in a do...while loop:");
+
+i = 0; // Reset i
+do {
+    if (i === 4) {
+        i++;
+        continue; 
+    }
+    console.log(i);
+    i++;
+} while (i < 10);
+// Output:
+// 0
+// 1
+// 2
+// 3
+// 5
+// 6
+// 7
+// 8
