@@ -207,3 +207,83 @@ do {
 // Even though the condition 'i < 5' is false initially, the loop runs once
 // and then exits because 'i' was incremented after the first execution.
 
+// BREAK STATEMENTS
+// The `break` statement in a `while` loop or `do...while` loop terminates the loop prematurely.
+
+// ----- 1. Using `break` in a `while` loop -----
+console.log("Using break in a while loop:");
+
+let i = 0;
+while (i < 10) {
+    if (i === 5) {
+        break; 
+    }
+    console.log(i);
+    i++;
+}
+// Output:
+// 0
+// 1
+// 2
+// 3
+// 4
+// The loop stops when i reaches 5, so it does not print 5 and higher
+
+
+// ----- 2. Using `break` in a `for` loop -----
+console.log("\nUsing break in a for loop:");
+
+for (let i = 0; i < 10; i++) {
+    if (i === 3) {
+        break; 
+    }
+    console.log(i);
+}
+// Output:
+// 0
+// 1
+// 2
+// The loop stops when i reaches 3, so it does not print 3 and higher
+
+
+// ----- 3. Using `break` in a `do...while` loop -----
+console.log("\nUsing break in a do...while loop:");
+
+i = 0; // Reset i
+do {
+    if (i === 4) {
+        break; 
+    }
+    console.log(i);
+    i++;
+} while (i < 10);
+// Output:
+// 0
+// 1
+// 2
+// 3
+// The loop stops when i reaches 4
+
+
+// ----- 4. Using `break` in a `switch` statement -----
+console.log("\nUsing break in a switch statement:");
+
+let dayOfWeek = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break; 
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break; 
+    default:
+        console.log("Invalid day");
+}
+// Output:
+// Wednesday
+// The break prevents fall-through to the next cases
+
