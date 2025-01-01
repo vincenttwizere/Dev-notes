@@ -17,12 +17,12 @@ console.log(name);
 // variable name should be case-sensitive
 // variable name should not be a reserved keyword
 
-let my-name = "John";// this is not a valid variable name becuase of hyphen
-let my name = "John"; // this is not a valid variable name becuase of space
-let 1myname = "John"; // this is not a valid variable name becuase of number
+// let my-name = "John";// this is not a valid variable name becuase of hyphen
+// let my name = "John"; // this is not a valid variable name becuase of space
+// let 1myname = "John"; // this is not a valid variable name becuase of number
 // console.log(my name);
-console.log(my name);
-console.log(1myname);
+// console.log(my name);
+// console.log(1myname);
 
 // js we camelCase naming convention
 
