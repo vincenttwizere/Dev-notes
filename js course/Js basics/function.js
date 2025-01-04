@@ -8,8 +8,15 @@ function greet(name) {
   
   greet("John"); // Output: Hello, John  
 
-// Arrow function
+// 2. Arrow function
 const greet = (name) => {
     console.log("Hello, " + name);
 };
 greet("Charlie");  // Output: Hello, Charlie
+
+//3. Parameters and Arguments
+
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 10));  // Output: 15
