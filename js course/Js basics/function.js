@@ -7,3 +7,9 @@ function greet(name) {
   }
   
   greet("John"); // Output: Hello, John  
+
+// Arrow function
+const greet = (name) => {
+    console.log("Hello, " + name);
+};
+greet("Charlie");  // Output: Hello, Charlie
