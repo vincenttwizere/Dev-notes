@@ -28,3 +28,11 @@ function greet(name = "Guest") {
 }
 greet();        // Output: Hello, Guest
 greet("Alice"); // Output: Hello, Alice
+
+// Return Statement
+
+function add(a, b) {
+    return a + b;
+}
+const result = add(5, 10);  // result = 15
+console.log(result);  // Output: 15
