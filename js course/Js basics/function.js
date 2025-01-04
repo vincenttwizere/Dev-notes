@@ -20,3 +20,11 @@ function add(a, b) {
     return a + b;
 }
 console.log(add(5, 10));  // Output: 15
+
+//4.Default Parameters (ES6)
+
+function greet(name = "Guest") {
+    console.log("Hello, " + name);
+}
+greet();        // Output: Hello, Guest
+greet("Alice"); // Output: Hello, Alice
