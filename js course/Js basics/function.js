@@ -14,6 +14,21 @@ const greet = (name) => {
 };
 greet("Charlie");  // Output: Hello, Charlie
 
+//more examples
+let addNumbers = (num1, num2) => {
+    let sum = num1 + num2;
+    return sum;
+}
+console.log(addNumbers(8,3));// Output: 11
+
+// function that produce the square of a number.
+
+let square = (num) =>{
+    let result = num*num
+    return result;
+}
+console.log(`The square of your number is: ${square(8)}`);// Output: 64
+
 //3. Parameters and Arguments
 
 function add(a, b) {
