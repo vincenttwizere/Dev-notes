@@ -36,3 +36,9 @@ function add(a, b) {
 }
 const result = add(5, 10);  // result = 15
 console.log(result);  // Output: 15
+
+//Function Hoisting
+console.log(greet());  // Output: Hello, world!
+function greet() {
+    return "Hello, world!";
+}
