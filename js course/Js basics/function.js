@@ -55,7 +55,7 @@ setTimeout(function() {
     console.log('Hello, big man')
 })();// Output: Hello, big man
 
-//The this Keyword
+// 8. The this Keyword
 
 const person = {    
     name: 'John',
@@ -65,3 +65,14 @@ const person = {
     }
   };
   person.greet();// Output: Hello, John
+
+// 9.  Callback Functions:  A callback function is passed as an argument to another function and is executed after an asynchronous task or event.
+
+function fetchData(callback) {
+    setTimeout(() => {
+      callback("Data received");
+    }, 1000);
+  }
+  
+  fetchData(data => console.log(data)); // "Data received" after 1 second
+  
