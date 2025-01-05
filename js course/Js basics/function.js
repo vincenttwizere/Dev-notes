@@ -69,10 +69,12 @@ const person = {
 // 9.  Callback Functions:  A callback function is passed as an argument to another function and is executed after an asynchronous task or event.
 
 function fetchData(callback) {
-    setTimeout(() => {
-      callback("Data received");
-    }, 1000);
-  }
-  
-  fetchData(data => console.log(data)); // "Data received" after 1 second
+    console.log("Fetching data...");
+    callback();  // Call the callback function after fetching data
+}
+
+fetchData(function() {
+    console.log("Data fetched!");
+});
+
   
