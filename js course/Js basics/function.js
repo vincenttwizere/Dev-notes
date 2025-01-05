@@ -54,3 +54,14 @@ setTimeout(function() {
 (function() {
     console.log('Hello, big man')
 })();// Output: Hello, big man
+
+//The this Keyword
+
+const person = {    
+    name: 'John',
+    age: 30,
+    greet: function() {
+      console.log('Hello, ' + this.name);
+    }
+  };
+  person.greet();// Output: Hello, John
