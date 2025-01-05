@@ -29,7 +29,7 @@ function greet(name = "Guest") {
 greet();        // Output: Hello, Guest
 greet("Alice"); // Output: Hello, Alice
 
-// Return Statement
+//  5. Return Statement
 
 function add(a, b) {
     return a + b;
@@ -43,8 +43,14 @@ function greet() {
     return "Hello, world!";
 }
 
-//Anonymous Functions: are the functions without a name
+// 6. Anonymous Functions: are the functions without a name
 
 setTimeout(function() {
     console.log("This message is delayed");
 }, 1000);
+
+// 7.IIFE (Immediately Invoked Function Expression) 
+
+(function() {
+    console.log('Hello, big man')
+})();// Output: Hello, big man
