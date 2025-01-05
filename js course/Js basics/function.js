@@ -42,3 +42,9 @@ console.log(greet());  // Output: Hello, world!
 function greet() {
     return "Hello, world!";
 }
+
+//Anonymous Functions: are the functions without a name
+
+setTimeout(function() {
+    console.log("This message is delayed");
+}, 1000);
