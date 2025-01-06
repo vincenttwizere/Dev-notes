@@ -11,3 +11,7 @@ console.log(fruitsNames[0]); // "Apple"
 console.log(fruitsNames[2]); // "Cherry"
 
 
+// modifying elements
+
+fruits[1] = "Orange"; // Changing "Banana" to "Orange"
+console.log(fruits); // ["Apple", "Orange", "Cherry"]
