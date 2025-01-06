@@ -15,3 +15,8 @@ console.log(fruitsNames[2]); // "Cherry"
 
 fruits[1] = "Orange"; // Changing "Banana" to "Orange"
 console.log(fruits); // ["Apple", "Orange", "Cherry"]
+
+// Common array methods
+let fruits = ["Apple", "Banana"];
+fruits.push("Cherry");
+console.log(fruits); // ["Apple", "Banana", "Cherry"]
